@@ -43,6 +43,13 @@ export default function Navbar() {
                 <Phone className="h-3.5 w-3.5" />
                 <span className="hidden sm:inline">86938 33530</span>
               </a>
+              <a
+                href="tel:+919146296155"
+                className="flex items-center gap-1.5 hover:text-accent-400 transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">91462 96155</span>
+              </a>
             </div>
             <a
               href="mailto:saadatindustries007@gmail.com"
