@@ -11,6 +11,8 @@ import {
   Mail,
 } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {

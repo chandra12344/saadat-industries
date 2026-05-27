@@ -4,6 +4,8 @@ import { prisma } from "@/lib/prisma";
 import ProductSearch from "@/components/ProductSearch";
 import { Box, ChevronRight, Package } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Products - SAADAT INDUSTRIES",
   description:
