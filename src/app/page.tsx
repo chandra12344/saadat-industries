@@ -170,8 +170,12 @@ export default async function HomePage() {
                 href={`/products/${product.slug}`}
                 className="group rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300"
               >
-                <div className="aspect-[4/3] bg-gray-100 flex items-center justify-center">
-                  <Box className="h-12 w-12 text-gray-300 group-hover:text-primary-300 transition-colors" />
+                <div className="aspect-[4/3] bg-gray-100 flex items-center justify-center overflow-hidden">
+                  {product.image ? (
+                    <img src={product.image} alt={product.name} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  ) : (
+                    <Box className="h-12 w-12 text-gray-300 group-hover:text-primary-300 transition-colors" />
+                  )}
                 </div>
                 <div className="p-4">
                   <span className="inline-block rounded-full bg-primary-50 px-2.5 py-0.5 text-xs font-medium text-primary-700 mb-2">
